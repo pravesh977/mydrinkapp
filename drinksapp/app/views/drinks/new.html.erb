@@ -1,0 +1,15 @@
+<h1>Hello, stranger! Care to share your drink with the world?</h1>
+<%= form_for :drink, url: drinks_path do |f| %>
+    <p>
+        <%= f.label :drink_Name %><br>
+        <%= f.text_field :name %>
+    </p>
+
+    <p>
+        <%= f.label :Drinkscription %><br>
+        <%= f.text_area :description %>
+    </p>
+    <p>
+        <%= f.submit "Share It" %>
+    </p>
+<% end %>
