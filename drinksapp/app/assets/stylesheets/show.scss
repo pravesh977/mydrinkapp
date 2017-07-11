@@ -5,3 +5,18 @@
 .singledrink p {
     color: salmon;
 }
+
+.singlecomment {
+    margin: 5px 0px 10px 10px;
+    list-style-type: none;
+}
+
+.commenter {
+    font-style: italic;
+    font-size: 20px;
+    font-weight: bold;
+}
+ 
+.commentbody {
+    font-size: 18px;
+}

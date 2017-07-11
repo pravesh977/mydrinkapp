@@ -5,4 +5,35 @@
     <h2>Drinkscription</h2>
     <p><%= @drink.description %></p>
 </div>
+<%= link_to "Edit This Drink", edit_drink_path(@drink) %>
+<%= link_to "Go Back to List", drinks_path %>
+
+<h2>Add a comment</h2>
+<%= form_for ([@drink, @drink.comments.build]) do |f| %>
+    <p>
+        <%= f.label :Commenter %><br>
+        <%= f.text_field :commenter %>
+    </p>
+    <p>
+        <%= f.label :Comment %><br>
+        <%= f.text_area :commentbody %>
+    </p>
+    <p>
+        <%= f.submit %>
+    </p>
+<% end %>
+
+<div class="commentsection">
+    <h2>Comments</h2>
+    <% @drink.comments.each do |elem| %>
+        <div class="singlecomment">
+            <li class="commenter"><%= elem.commenter %></li>
+            <li class="commentbody"><%= elem.commentbody %></li>
+            <%= elem.created_at %>
+        </div>
+    <% end %>
+</div>
+
+
+
 

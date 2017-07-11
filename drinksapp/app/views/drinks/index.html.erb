@@ -1,0 +1,14 @@
+<h1>Check out these awesome drinks shared by our fellow members</h1>
+<%= link_to "Main page", root_path %>
+<%= link_to "Share Your Drink", new_drink_path %>
+<% @drinks.each do |elem| %>
+    <div class="eachdrink">
+        <p>Name: <%= elem.name %></p>
+        <p>Drinkscription: <%= elem.description %></p>
+        <%= link_to "More Details", drink_path(elem) %>
+        <%= link_to "Edit this drink", edit_drink_path(elem) %>
+        <%= link_to "Delete", drink_path(elem),
+                method: :delete,
+                data: { confirm: 'Are you sure?' } %>
+    </div>
+    <% end %>

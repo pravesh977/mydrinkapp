@@ -1,5 +1,5 @@
-<h1>Hello, stranger! Care to share your drink with the world?</h1>
-<%= form_for :drink, url: drinks_path do |f| %>
+<h1>Making changes to the drink></h1>
+<%= form_for @drink do |f| %>
     <% if @drink.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -14,17 +14,13 @@
     </div>
   <% end %>
     <p>
-        <%= f.label :drink_Name %><br>
+        <%= f.label :Name %><br>
         <%= f.text_field :name %>
     </p>
-
     <p>
         <%= f.label :Drinkscription %><br>
-        <%= f.text_area :description %>
+        <%= f.text_field :description %>
     </p>
-    <p>
-        <%= f.submit "Share It" %>
-    </p>
-<% end %>
-<%= link_to "Back to List", drinks_path %>
-<%= link_to "Main Page", root_path %>
+    <p><%= f.submit "Edit Changes" %></p>
+    <% end %>
+    <%= link_to 'Go Back', drinks_path %>
