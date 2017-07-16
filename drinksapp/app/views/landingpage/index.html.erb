@@ -1,4 +1,12 @@
 <h1>Hello there, check out some drinks by some random people and share yours too</h1>
-<%= link_to "Browse Drinks", controller: "drinks" %>
-<%# link_to "Browse Drinks", drinks_path , this works instead of above "controllers: "drinks" too%>
-<%= link_to "Share Your Drink", new_drink_path %>
+<%= render "profilenav/profilenav" %>
+        <%= link_to "Browse Drinks", controller: "drinks" %>
+        <%# link_to "Browse Drinks", drinks_path , this works instead of above "controllers: "drinks" too%>
+<% if user_signed_in? %>
+        <%= link_to "Share Your Drink", new_drink_path %>
+        <%= link_to "sign out", destroy_user_session_path, method: :delete %>
+    <% else %>
+        <%= link_to "sign in", user_session_path %>
+        <%= link_to "sign up", new_user_registration_path %>
+<% end %>
+    
