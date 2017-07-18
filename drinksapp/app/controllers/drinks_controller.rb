@@ -9,12 +9,14 @@ class DrinksController < ApplicationController
     end
 
     def new
-        @drink = Drink.new
+        # @drink = Drink.new
+        @drink = current_user.drinks.build
     end
 
     def create
         # render plain: params[:drink].inspect
-        @drink = Drink.new(drink_params)
+        # @drink = Drink.new(drink_params)
+        @drink = current_user.drinks.build(drink_params)
         if @drink.save
             redirect_to @drink
         else

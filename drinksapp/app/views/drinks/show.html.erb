@@ -3,7 +3,8 @@
     <p><%= @drink.name %></p>
     <br>
     <h2>Drinkscription</h2>
-    <p><%= @drink.description %></p>
+    <p><%= @drink.description %></p><br>
+    <p>Shared by: <%= @drink.user.username %></p>
 </div>
 <%= link_to "Edit This Drink", edit_drink_path(@drink) %>
 <%= link_to "Go Back to List", drinks_path %>

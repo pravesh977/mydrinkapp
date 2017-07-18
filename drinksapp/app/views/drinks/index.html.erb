@@ -5,6 +5,10 @@
     <div class="eachdrink">
         <p>Name: <%= elem.name %></p>
         <p>Drinkscription: <%= elem.description %></p>
+        <p>Posted by: <%= elem.user_id %>
+        <p>Posted by: <%= elem.user.username %>
+        <p>Posted by: <%= elem.user.email %>
+    
         <%= link_to "More Details", drink_path(elem) %>
         <%= link_to "Edit this drink", edit_drink_path(elem) %>
         <%= link_to "Delete", drink_path(elem),
