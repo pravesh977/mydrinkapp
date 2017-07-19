@@ -21,6 +21,10 @@
         <%= f.label :Drinkscription %><br>
         <%= f.text_field :description %>
     </p>
+       <p>
+      <%= f.label :Upload_image %>
+      <%= f.file_field :drinkimage1 %>
+    </p>
     <p><%= f.submit "Edit Changes" %></p>
     <% end %>
     <%= link_to 'Go Back', drinks_path %>

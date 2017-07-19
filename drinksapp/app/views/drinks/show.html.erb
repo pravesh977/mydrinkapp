@@ -2,6 +2,7 @@
     <h2>Drink Name</h2>
     <p><%= @drink.name %></p>
     <br>
+    <%= image_tag @drink.drinkimage1.url(:large) %>
     <h2>Drinkscription</h2>
     <p><%= @drink.description %></p><br>
     <p>Shared by: <%= @drink.user.username %></p>

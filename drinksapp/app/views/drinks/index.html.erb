@@ -4,6 +4,7 @@
 <% @drinks.each do |elem| %>
     <div class="eachdrink">
         <p>Name: <%= elem.name %></p>
+        <%= image_tag elem.drinkimage1.url(:large) %>
         <p>Drinkscription: <%= elem.description %></p>
         <p>Posted by: <%= elem.user_id %>
         <p>Posted by: <%= elem.user.username %>
