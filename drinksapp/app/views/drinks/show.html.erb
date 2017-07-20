@@ -7,7 +7,14 @@
     <p><%= @drink.description %></p><br>
     <p>Shared by: <%= @drink.user.username %></p>
 </div>
+<div class="usershow">
+    <p>Posted by: <%= @drink.user.username %>
+    <p>Posted by: <%= @drink.user.email %>
+    <%= image_tag @drink.user.profileimage.url(:thumb) %>
+</div>
+<% if @drink.user == current_user %>
 <%= link_to "Edit This Drink", edit_drink_path(@drink) %>
+<% end %>
 <%= link_to "Go Back to List", drinks_path %>
 
 <h2>Add a comment</h2>

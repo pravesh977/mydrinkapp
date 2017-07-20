@@ -4,4 +4,5 @@ Rails.application.routes.draw do
   resources :drinks do
     resources :comments
   end
+  # match '/users/:id', to: 'users#show', via: 'get'
 end

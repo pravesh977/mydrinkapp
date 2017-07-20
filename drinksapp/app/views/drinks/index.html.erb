@@ -6,14 +6,14 @@
         <p>Name: <%= elem.name %></p>
         <%= image_tag elem.drinkimage1.url(:large) %>
         <p>Drinkscription: <%= elem.description %></p>
-        <p>Posted by: <%= elem.user_id %>
         <p>Posted by: <%= elem.user.username %>
-        <p>Posted by: <%= elem.user.email %>
         <%= image_tag elem.user.profileimage.url(:thumb) %>
-        <%= link_to "More Details", drink_path(elem) %>
+        <%= link_to "Comments", drink_path(elem) %>
+        <% if elem.user == current_user %>
         <%= link_to "Edit this drink", edit_drink_path(elem) %>
         <%= link_to "Delete", drink_path(elem),
                 method: :delete,
                 data: { confirm: 'Are you sure?' } %>
+        <% end %>
     </div>
     <% end %>
