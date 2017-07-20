@@ -1,5 +1,8 @@
 class DrinksController < ApplicationController
 
+    #this makes sure that if youre not signed in, you can only visit the index and show page or else, it will redirect you to login page if user does soemthing like localhost:3000/drinks/new
+    before_action :authenticate_user!, except: [:index, :show]
+
     def index
         @drinks = Drink.all
     end
