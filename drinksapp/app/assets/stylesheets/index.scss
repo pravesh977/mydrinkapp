@@ -2,3 +2,11 @@
     font-size: 24px;
     border: 5px black solid;
 }
+
+body.drinksall {
+    background-image: url("mainbackground.jpeg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

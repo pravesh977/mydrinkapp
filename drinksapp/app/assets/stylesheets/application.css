@@ -14,5 +14,12 @@
  *= require_self
  */
 h1 {
-    clear: both
+    clear: both;
+    font-family: 'Kaushan Script', cursive;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
 }

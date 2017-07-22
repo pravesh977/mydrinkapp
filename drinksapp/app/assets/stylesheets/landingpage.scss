@@ -1,5 +1,60 @@
 .greetingh1 {
-    text-align: center;
+    margin: 0 auto;
     color: pink;
-    margin-top: 40px;
+    width: 80%;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.landingdiv a{
+    text-decoration: none;
+    font-size: 30px;
+    background: salmon;
+    padding: 5px;
+    border-radius: 3px;   
+}
+
+.landingdiv {
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.landingdiv img {
+    height: 100px;
+    width: 100px;
+}
+
+.landingdiv a:hover {
+    background: black;
+}
+
+.landingdiv img:hover {
+    cursor: pointer;
+    transform: rotate(45deg);
+    transition: 1s;
+}
+
+#landingherodrink {
+    margin: 3% auto 3%;
+    text-align: center;
+}
+#landingherodrink img {
+    height: 100vh;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.mainlandingdiv {
+    
+}
+
+body.index {
+    background-image: url("wallpaperbackground.jpeg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
