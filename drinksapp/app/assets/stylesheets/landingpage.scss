@@ -1,18 +1,19 @@
 .greetingh1 {
     margin: 0 auto;
-    color: pink;
+    color: #FF5149;
     width: 80%;
     text-align: center;
-    font-size: 40px;
+    font-size: 50px;
 
 }
 
 .landingdiv a{
     text-decoration: none;
     font-size: 30px;
+    font-weight: bold;
     background: salmon;
     padding: 5px;
-    border-radius: 3px;   
+    border-radius: 10px;   
 }
 
 .landingdiv {
@@ -28,7 +29,9 @@
 }
 
 .landingdiv a:hover {
+    transition: 1s;
     background: black;
+    color: aliceblue;
 }
 
 .landingdiv img:hover {
