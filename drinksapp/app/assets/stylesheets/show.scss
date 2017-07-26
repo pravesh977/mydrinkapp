@@ -20,3 +20,76 @@
 .commentbody {
     font-size: 18px;
 }
+body.show .usershow {
+        width: 60%;
+        background: #E8E3A8;
+        margin: 0 auto;
+    }
+body.show .usershow li {
+        list-style-type: none;
+        font-size: 24px;
+    }
+body.show {
+        text-align: center;
+        background-image: url("showbackground.jpeg");
+        background-attachment: fixed;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+        body.show .commentsection {
+        width: 100%;
+        background: #E8E3A8;
+        text-align: center;
+    }
+    body.show .commentform {
+        color: aliceblue;
+    }
+    body.show .commentform p {
+        color: aliceblue;
+    }
+@media (max-width: 600px) {
+    
+    body.show .singledrink {
+        background: #81BAE8;
+    }
+    body.show .singledrink img {
+        width: 100%;
+    }
+    body.show h2 {
+        clear: both;
+    }
+    body.show p {
+        font-size: 30px;
+        font-style: italic;
+        font-weight: bold;
+        color: #121836;
+    }
+}
+
+@media (min-width: 600px) {
+body.show .singledrink {
+        background: #81BAE8;
+        clear: both;
+        width: 60%;
+        margin: 0 auto;
+    }
+    body.show .singledrink img {
+        width: 100%;
+    }
+    body.show .singledrink p {
+        font-size: 30px;
+        font-weight: bolder;
+        font-style: italic;
+        color: #121836;
+    }
+    body.show h2 {
+        clear: both;
+    }
+    body.show .usershow {
+        width: 20%;
+
+    }
+}
+

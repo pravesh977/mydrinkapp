@@ -1,7 +1,6 @@
 <%= render "navmain/navmain" %>
 <body class="<%= params[:action] %> ">
 <div class="singledrink">
-    <h2>Drink Name</h2>
     <p><%= @drink.name %></p>
     <br>
     <%= image_tag @drink.drinkimage1.url(:large) %>
@@ -9,14 +8,17 @@
     <p><%= @drink.description %></p><br>
 </div>
 <div class="usershow">
-    <p>Posted by: <%= @drink.user.username %>
-    <%= image_tag @drink.user.profileimage.url(:thumb) %>
+    <ul>
+    <li>Posted by: <%= @drink.user.username %></li>
+    <li><%= image_tag @drink.user.profileimage.url(:thumb) %></li>
+    </ul>
 </div>
 <% if @drink.user == current_user %>
 <%= link_to "Edit This Drink", edit_drink_path(@drink) %>
 <% end %>
 <%= link_to "Go Back to List", drinks_path %>
 
+<div class="commentform">
 <h2>Add a comment</h2>
 <%= form_for ([@drink, @drink.comments.build]) do |f| %>
     <p>
@@ -27,10 +29,9 @@
         <%= f.label :Comment %><br>
         <%= f.text_area :commentbody %>
     </p>
-    <p>
         <%= f.submit %>
-    </p>
 <% end %>
+</div>
 
 <div class="commentsection">
     <h2>Comments</h2>
