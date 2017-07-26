@@ -1,6 +1,18 @@
+@media only screen and (max-width: 500px) {
+    body.drinksall {
+        color: #0E3E47;
+        font-weight: bolder;
+        
+    }
+    .eachdrink {
+        margin-bottom: 100px;
+        background: pink;
+    }
+}
 .eachdrink {
     font-size: 24px;
     border: 5px black solid;
+    text-align: center;
 }
 
 body.drinksall {

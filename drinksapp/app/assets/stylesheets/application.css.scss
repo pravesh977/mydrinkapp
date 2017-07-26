@@ -37,3 +37,22 @@ footer {
     width: 50%;
     justify-content: space-between;
 }
+
+.authdiv {
+    border: 5px solid palevioletred;
+    background: cyan;
+    width: 30vw;
+    margin: 10% auto;
+    text-align: center;
+}
+
+.authdiv div {
+    margin-top: 10px;
+}
+body.authbody {
+    background-image: url(authpicture.jpeg);
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
