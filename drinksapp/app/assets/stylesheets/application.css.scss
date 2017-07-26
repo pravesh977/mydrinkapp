@@ -41,7 +41,7 @@ footer {
 .authdiv {
     border: 5px solid palevioletred;
     background: cyan;
-    width: 30vw;
+    width: 45vw;
     margin: 10% auto;
     text-align: center;
 }
@@ -55,4 +55,11 @@ body.authbody {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+@media only screen and (max-width: 500px) {
+    .authdiv {
+        width: 60vw;
+        font-weight: bold;
+    }
 }

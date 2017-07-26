@@ -1,12 +1,15 @@
-@media only screen and (max-width: 500px) {
+@media (max-width: 600px) {
     body.drinksall {
         color: #0E3E47;
         font-weight: bolder;
-        
+        text-align: center;
     }
     .eachdrink {
         margin-bottom: 100px;
-        background: pink;
+        background: #B5C9C0;
+    }
+    .drinkimage {
+        width: 100%;
     }
 }
 .eachdrink {
@@ -15,10 +18,54 @@
     text-align: center;
 }
 
+.eachdrink p {
+    font-style: italic;
+}
+
 body.drinksall {
     background-image: url("mainbackground.jpeg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+body.drinksall h1 {
+    text-align: center;
+}
+.posteduserclass {
+    background: #361F24;
+    color: white;
+}
+
+.posteduserclass li {
+    list-style-type: none;
+}
+
+.posteduserclass a {
+    color: #E8E681;
+}
+
+@media (min-width: 600px) {
+    .posteduserclass {
+   
+    justify-content: space-around;
+    align-items: center;
+    }
+    .eachdrink {
+        width: 45%;
+        margin-bottom: 70px;
+        background: #B5C9C0;
+        justify-content: space-between;
+    }
+    .drinkimage {
+        width: 100%;
+        max-height: 500px;
+    }
+    .eachmaindiv {
+        flex-wrap: wrap;
+        display: flex;
+        margin: 0 auto;
+        justify-content: space-around;
+        font-weight: bold;
+    }
 }
