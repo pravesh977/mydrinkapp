@@ -1,6 +1,8 @@
 <%= render "navmain/navmain" %>
+
+<body class="editandnewform">
 <h1>Hello, stranger! Care to share your drink with the world?</h1>
-<%= form_for :drink, url: drinks_path do |f| %>
+<%= form_for :drink, url: drinks_path, class: "editandnewform" do |f| %>
     <% if @drink.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -33,3 +35,4 @@
 <% end %>
 <%= link_to "Back to List", drinks_path %>
 <%= link_to "Main Page", root_path %>
+</body>

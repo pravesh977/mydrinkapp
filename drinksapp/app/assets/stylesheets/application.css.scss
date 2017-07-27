@@ -34,8 +34,10 @@ footer {
     display: inline-flex;
     align-items: center;
     text-align: center;
-    width: 50%;
-    justify-content: space-between;
+    width: 100%;
+    justify-content: space-around;
+    background: black;
+    color: white;
 }
 
 .authdiv {
@@ -62,4 +64,34 @@ body.authbody {
         width: 60vw;
         font-weight: bold;
     }
+    .editandnewform form {
+        min-width: 60%;
+    }
+    footer {
+        display: flex;
+        width: 100%;
+        flex-wrap: wrap;
+    }
+}
+
+body.editandnewform {
+    background-image: url("editnewbackground.jpeg");
+    background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+}
+
+body.editandnewform a {
+    color: black;
+    font-size: 30px;
+    background: white;
+    margin: 20px;
+}
+body.editandnewform form {
+    text-align: center;
+    background: #79FFDC;
+    width: 30%;
+    margin: 0 auto;
 }
