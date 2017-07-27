@@ -1,6 +1,7 @@
 <body class="drinksall">
 <%= render "navmain/navmain" %>
 <h1>Check out these awesome drinks shared by our fellow members</h1>
+<p class="linkmainpage"><%= link_to "Go back to main page", root_path %></p>
 <div class="eachmaindiv">
 <% @drinks.each do |elem| %>
     <div class="eachdrink">
@@ -11,7 +12,7 @@
         <li>Posted by: <%= elem.user.username %></li>
         <li><%= image_tag elem.user.profileimage.url(:thumb) %></li>
         <li><%= link_to "Comments", drink_path(elem) %></li>
-        <% if current_user.username == "pravesh" || current_user == elem.user %>
+        <% if current_user && (current_user.username == "admin" || current_user == elem.user) %>
                 <li><%= link_to "Edit this drink", edit_drink_path(elem) %></li>
                 <li><%= link_to "Delete", drink_path(elem),
                         method: :delete,

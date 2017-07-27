@@ -16,7 +16,7 @@
 <% if @drink.user == current_user %>
 <%= link_to "Edit This Drink", edit_drink_path(@drink) %>
 <% end %>
-<%= link_to "Go Back to List", drinks_path %>
+<p class="linkmainpage"><%= link_to "Go Back to List", drinks_path %></p>
 
 <div class="commentform">
 <h2>Add a comment</h2>
