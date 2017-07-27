@@ -11,11 +11,11 @@
         <li>Posted by: <%= elem.user.username %></li>
         <li><%= image_tag elem.user.profileimage.url(:thumb) %></li>
         <li><%= link_to "Comments", drink_path(elem) %></li>
-        <% if elem.user == current_user %>
-            <li><%= link_to "Edit this drink", edit_drink_path(elem) %></li>
-            <li><%= link_to "Delete", drink_path(elem),
-                    method: :delete,
-                    data: { confirm: 'Are you sure?' } %></li>
+        <% if current_user.username == "pravesh" || current_user == elem.user %>
+                <li><%= link_to "Edit this drink", edit_drink_path(elem) %></li>
+                <li><%= link_to "Delete", drink_path(elem),
+                        method: :delete,
+                        data: { confirm: 'Are you sure?' } %></li>
             <% end %>
             </div>
     </div>
