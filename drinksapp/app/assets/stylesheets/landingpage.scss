@@ -55,7 +55,7 @@
 }
 
 body.index {
-    background-image: url("wallpaperbackground.jpeg");
+    background-image: asset-data-url("wallpaperbackground.jpeg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
