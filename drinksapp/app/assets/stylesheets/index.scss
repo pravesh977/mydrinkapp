@@ -27,7 +27,7 @@
 }
 
 body.drinksall {
-    background-image: url("mainbackground.jpeg");
+    background-image: asset-data-url("mainbackground.jpeg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
