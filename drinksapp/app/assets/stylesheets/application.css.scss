@@ -52,7 +52,7 @@ footer {
     margin-top: 10px;
 }
 body.authbody {
-    background-image: url(authpicture.jpeg);
+    background-image: asset-data-url(authpicture.jpeg);
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
@@ -75,7 +75,7 @@ body.authbody {
 }
 
 body.editandnewform {
-    background-image: url("editnewbackground.jpeg");
+    background-image: asset-data-url("editnewbackground.jpeg");
     background-attachment: fixed;
     background-position: center center;
     background-repeat: no-repeat;
