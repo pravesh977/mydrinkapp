@@ -72,11 +72,12 @@ body.show {
 body.show .singledrink {
         background: #81BAE8;
         clear: both;
-        width: 60%;
+        width: 40%;
         margin: 0 auto;
     }
     body.show .singledrink img {
         width: 100%;
+        max-height: 700px;
     }
     body.show .singledrink p {
         font-size: 30px;

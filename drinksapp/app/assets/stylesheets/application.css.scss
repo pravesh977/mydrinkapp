@@ -95,3 +95,18 @@ body.editandnewform form {
     width: 30%;
     margin: 0 auto;
 }
+
+.linkstopages a {
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;
+    background: salmon;
+    padding: 5px;
+    border-radius: 10px;   
+}
+
+.linkstopages a:hover {
+    transition: 1s;
+    background: black;
+    color: aliceblue;
+}

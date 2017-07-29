@@ -1,7 +1,10 @@
 <body class="drinksall">
 <%= render "navmain/navmain" %>
 <h1>Check out these awesome drinks shared by our fellow members</h1>
-<p class="linkmainpage"><%= link_to "Go back to main page", root_path %></p>
+<div class="linkstopages">
+    <p class="linkmainpage"><%= link_to "Go back to main page", root_path %></p>
+    <p class="linkmainpage"><%= link_to "Share Your Drink", new_drink_path %></p>
+</div>
 <div class="eachmaindiv">
 <% @drinks.each do |elem| %>
     <div class="eachdrink">
